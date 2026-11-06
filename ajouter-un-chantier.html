@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ajouter un chantier (démonstration) | Jardins d'Ille</title>
+  <title>Ajouter un chantier (démonstration) | Jardins d’Ille</title>
   <meta name="description" content="Démonstration : l'écran qui sert à ajouter un chantier à la galerie, depuis un téléphone.">
   <!-- Démonstration : hors des moteurs de recherche. Le vrai site sera indexé. -->
   <meta name="robots" content="noindex, nofollow">
@@ -13,14 +13,18 @@
   <meta property="og:description" content="Démonstration : l'écran qui sert à ajouter un chantier à la galerie, depuis un téléphone.">
   <meta name="theme-color" content="#24433A">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%20aria-hidden%3D%22true%22%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2224%22%20r%3D%2224%22%20fill%3D%22%2324433A%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2222%22%20r%3D%227%22%20fill%3D%22%239DB5DD%22%2F%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2218%22%20r%3D%227%22%20fill%3D%22%237E9CCB%22%2F%3E%3Ccircle%20cx%3D%2229%22%20cy%3D%2228%22%20r%3D%226.5%22%20fill%3D%22%23B7C9E6%22%2F%3E%3Cpath%20d%3D%22M15%2036c4-4%2010-5%2018-3%22%20stroke%3D%22%23B7C3A5%22%20stroke-width%3D%222.4%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
-  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="assets/fonts/ortica.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sofia-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/reprise.css">
+
 </head>
 <body>
-  <div class="bandeau-demo">Démonstration préparée pour une annonce : le nom, les avis et les chiffres sont inventés, et les dessins tiennent la place de vos photos de chantiers.</div>
+  <div class="bandeau-demo">Démonstration préparée pour une annonce : le nom, les avis et les chiffres sont inventés, et les dessins tiennent la place de vos photos de chantiers.</div>
   <header class="entete">
     <div class="conteneur">
-      <a class="marque" href="index.html" aria-label="Jardins d'Ille, accueil"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#24433A"/><circle cx="18" cy="22" r="7" fill="#9DB5DD"/><circle cx="28" cy="18" r="7" fill="#7E9CCB"/><circle cx="29" cy="28" r="6.5" fill="#B7C9E6"/><path d="M15 36c4-4 10-5 18-3" stroke="#B7C3A5" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><span class="marque-nom"><strong>Jardins d'Ille</strong><span>Paysagiste · Nord de Rennes</span></span></a>
+      <a class="marque" href="index.html" aria-label="Jardins d'Ille, accueil"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#24433A"/><circle cx="18" cy="22" r="7" fill="#9DB5DD"/><circle cx="28" cy="18" r="7" fill="#7E9CCB"/><circle cx="29" cy="28" r="6.5" fill="#B7C9E6"/><path d="M15 36c4-4 10-5 18-3" stroke="#B7C3A5" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><span class="marque-nom"><strong>Jardins d’Ille</strong><span>Paysagiste · Nord de Rennes</span></span></a>
       <button class="bouton-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span></button>
       <nav class="nav" id="navigation" aria-label="Navigation principale">
         <ul>
@@ -48,7 +52,7 @@
         <div>
           <p class="fil"><a href="index.html">Accueil</a> / <a href="realisations.html">Réalisations</a> / Ajouter un chantier</p>
           <h1>Ajouter un chantier</h1>
-          <p class="intro">Voici l'écran que vous aurez dans votre espace : vous le remplissez sur le chantier, depuis votre téléphone, et le chantier s'affiche en tête de vos réalisations et sur la page d'accueil. Essayez avec vos propres photos.</p>
+          <p class="intro">Voici l’écran que vous aurez dans votre espace : vous le remplissez sur le chantier, depuis votre téléphone, et le chantier s’affiche en tête de vos réalisations et sur la page d’accueil. Essayez avec vos propres photos.</p>
         </div>
       </div>
     </section>
@@ -68,8 +72,8 @@
                 <label class="depot depot-photo" for="photo-apres"><span class="vide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><strong>Choisir une photo</strong><br><span class="petit">Prise à la fin du chantier.</span></span><img src="data:," alt="" hidden><input type="file" id="photo-apres" name="photo-apres" accept="image/*" data-photo-chantier data-requise></label>
                 <span class="erreur" aria-live="polite"></span>
               </div>
-              <div class="champ plein"><button type="button" class="lien-bouton petit" data-exemple>Pas de photo sous la main ? Essayer avec des dessins d'exemple</button></div>
-              <div class="champ"><label for="type">Type de travaux <span class="obligatoire">*</span></label><select id="type" name="type" required><option value="">Choisir…</option><option value="creation-jardin">Création de jardins</option><option value="terrasses-bois">Terrasses en bois</option><option value="clotures-portails">Clôtures et portails</option><option value="entretien-jardin">Entretien à l'année</option></select><span class="erreur" aria-live="polite"></span></div>
+              <div class="champ plein"><button type="button" class="lien-bouton petit" data-exemple>Pas de photo sous la main ? Essayer avec des dessins d’exemple</button></div>
+              <div class="champ"><label for="type">Type de travaux <span class="obligatoire">*</span></label><select id="type" name="type" required><option value="">Choisir…</option><option value="creation-jardin">Création de jardins</option><option value="terrasses-bois">Terrasses en bois</option><option value="clotures-portails">Clôtures et portails</option><option value="entretien-jardin">Entretien à l’année</option></select><span class="erreur" aria-live="polite"></span></div>
               <div class="champ"><label for="commune">Commune <span class="obligatoire">*</span></label>
                   <div class="combo">
                     <input type="text" id="commune" name="commune" required autocomplete="off" placeholder="Par exemple : Chevaigné" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions-communes" data-communes='["Betton","Rennes","Saint-Grégoire","Chevaigné","Melesse","La Mézière","Montgermont","Pacé","Thorigné-Fouillard","Cesson-Sévigné","Saint-Sulpice-la-Forêt","Acigné","Liffré","Chantepie","Vezin-le-Coquet","Saint-Aubin-d&#39;Aubigné"]'>
@@ -86,11 +90,11 @@
         <aside class="ecran-aide">
           <h2>Comment ça marche</h2>
           <ol>
-            <li>Vous prenez la photo « après » à la fin du chantier (et la photo « avant » au début, si vous y pensez).</li>
-            <li>Vous choisissez le type de travaux et la commune : ils servent au filtre de la galerie et à Google.</li>
+            <li>Vous prenez la photo « après » à la fin du chantier (et la photo « avant » au début, si vous y pensez).</li>
+            <li>Vous choisissez le type de travaux et la commune : ils servent au filtre de la galerie et à Google.</li>
             <li>Vous publiez. Les photos sont réduites toutes seules pour que le site reste rapide.</li>
           </ol>
-          <p class="petit">Dans la démonstration, le chantier n'est gardé que dans votre navigateur : personne d'autre ne le voit.</p>
+          <p class="petit">Dans la démonstration, le chantier n’est gardé que dans votre navigateur : personne d’autre ne le voit.</p>
           <div class="mes-ajouts" data-mes-ajouts hidden>
             <h3>Chantiers ajoutés</h3>
             <ul></ul>
@@ -103,12 +107,12 @@
     <div class="conteneur">
       <div class="grille">
         <div>
-          <a class="marque" href="index.html" aria-label="Accueil"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#24433A"/><circle cx="18" cy="22" r="7" fill="#9DB5DD"/><circle cx="28" cy="18" r="7" fill="#7E9CCB"/><circle cx="29" cy="28" r="6.5" fill="#B7C9E6"/><path d="M15 36c4-4 10-5 18-3" stroke="#B7C3A5" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><span class="marque-nom"><strong>Jardins d'Ille</strong><span>Paysagiste · Nord de Rennes</span></span></a>
+          <a class="marque" href="index.html" aria-label="Accueil"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#24433A"/><circle cx="18" cy="22" r="7" fill="#9DB5DD"/><circle cx="28" cy="18" r="7" fill="#7E9CCB"/><circle cx="29" cy="28" r="6.5" fill="#B7C9E6"/><path d="M15 36c4-4 10-5 18-3" stroke="#B7C3A5" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><span class="marque-nom"><strong>Jardins d’Ille</strong><span>Paysagiste · Nord de Rennes</span></span></a>
           <p style="margin-top:20px;max-width:330px">Paysagiste à Betton, au nord de Rennes, depuis six ans. Création de jardins, terrasses en bois, clôtures et entretien chez les particuliers.</p>
         </div>
         <div>
           <h4>Mes services</h4>
-          <ul><li><a href="creation-jardin.html">Création de jardins</a></li><li><a href="terrasses-bois.html">Terrasses en bois</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="entretien-jardin.html">Entretien à l'année</a></li></ul>
+          <ul><li><a href="creation-jardin.html">Création de jardins</a></li><li><a href="terrasses-bois.html">Terrasses en bois</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="entretien-jardin.html">Entretien à l’année</a></li></ul>
         </div>
         <div>
           <h4>Le site</h4>
@@ -120,7 +124,7 @@
         </div>
       </div>
       <div class="pied-bas">
-        <span>© <span data-annee>2026</span> Jardins d'Ille</span>
+        <span>© <span data-annee>2026</span> Jardins d’Ille</span>
         <span><a href="mentions-legales.html">Mentions légales et confidentialité</a> · <button class="lien-bouton" data-gerer-cookies>Gérer les cookies</button></span>
       </div>
     </div>
@@ -131,7 +135,7 @@
   </div>
   <div class="cookies" role="dialog" aria-labelledby="cookies-titre">
     <h2 id="cookies-titre">Votre vie privée</h2>
-    <p>Avec votre accord, je mesure la fréquentation de ce site pour l'améliorer. Vous pouvez changer d'avis à tout moment depuis le pied de page.</p>
+    <p>Avec votre accord, je mesure la fréquentation de ce site pour l’améliorer. Vous pouvez changer d’avis à tout moment depuis le pied de page.</p>
     <div class="cookies-actions">
       <button class="bouton" data-cookies="refuser">Tout refuser</button>
       <button class="bouton" data-cookies="accepter">Tout accepter</button>
@@ -139,7 +143,7 @@
     </div>
     <div class="cookies-detail">
       <div class="categorie"><div><strong>Nécessaires</strong><span>Mémorisent votre choix pendant six mois. Toujours actifs.</span></div><input type="checkbox" class="interrupteur" checked disabled aria-label="Cookies nécessaires, toujours actifs"></div>
-      <div class="categorie"><div><strong>Mesure d'audience</strong><span>Statistiques de fréquentation, sans publicité ni revente.</span></div><input type="checkbox" class="interrupteur" id="mesure-audience" aria-label="Mesure d'audience"></div>
+      <div class="categorie"><div><strong>Mesure d’audience</strong><span>Statistiques de fréquentation, sans publicité ni revente.</span></div><input type="checkbox" class="interrupteur" id="mesure-audience" aria-label="Mesure d'audience"></div>
       <div class="cookies-actions"><button class="bouton" data-cookies="enregistrer">Enregistrer mes choix</button></div>
     </div>
   </div>
